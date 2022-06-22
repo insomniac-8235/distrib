@@ -4,7 +4,7 @@ services:
   tp1:
     container_name: tp1
     image: aqtiongame/server:v11  # replace_with_image_reference_from_readme
-    ports:  # ports to map to host, cannot be in use and must correspond to same value as PORTS variable in .env
+    ports:  # ports to map to host, cannot be in use and must correspond to same value as PORT variable in .env
       - "27910:27910/udp"
       - "27910:27910/tcp"
     stdin_open: true
